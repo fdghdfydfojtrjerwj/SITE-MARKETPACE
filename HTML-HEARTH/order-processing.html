@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="/site/CSS/style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+  <div class="logo">
+    <img src="/site/img/logo.png" alt="Logo" id="logo" class="logo">
+  </div>
+  
+  <ul class="nav-links">
+    <li><a href="/site/HTML-HEARTH/index.html">Shop</a></li>
+    <li><a href="/site/HTML-HEARTH/phones.html">Phones</a></li>
+    <li><a href="/site/HTML-HEARTH/new-arrivals.html">New Arrivals</a></li>
+    <li><a href="/site/HTML-HEARTH/Acessories.html">Accessories</a></li>
+  </ul>
+
+  <div class="search-bar" style="position: relative;">
+    <input type="search" id="searchInput" placeholder="Search for products..." autocomplete="off">
+        <i class="loop-icon" style="position: absolute; left: 0.625rem; font-size: 1.125rem; color: gray; pointer-events: none;"></i>
+       <div id="searchSuggestions" class="search-suggestions"></div>
+  </div>
+
+  <div class="user-actions">
+    <a href="/site/HTML-HEARTH/account.html" class="profile-link"></a>
+    <a href="/site/HTML-HEARTH/cart.html" class="shop-link"></a>
+  </div>
+</header>
+
+
+ <div class="card-section-order">
+ 
+  <!-- Left -->
+  <div class="left-panel">
+    <h1>Placing an order</h1>
+ 
+    <div class="pricing-rows">
+      <div class="pricing-row">
+        <span>Today</span>
+        <span class="value">3 days free</span>
+      </div>
+      <div class="pricing-row">
+        <span>Jun 18</span>
+        <span class="value"><span class="strikethrough">€27</span> €1/mo for 3 months</span>
+      </div>
+      <div class="pricing-row">
+        <span>Always</span>
+        <span class="value">Cancel anytime</span>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Right -->
+  <div class="right-panel">
+ 
+    <!-- Domain offer -->
+    <div class="domain-offer">
+      <span>Includes domain offer</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+    </div>
+ 
+    <!-- PayPal / Apple Pay -->
+    <div class="payment-btns">
+      <button class="btn-paypal">
+        <span style="color:#003087;font-weight:900;">Pay</span><span class="pp-blue" style="font-weight:900;">Pal</span>
+      </button>
+      <button class="btn-apple">
+        <span style="font-size:1.2rem;">&#63743;</span> Pay
+      </button>
+    </div>
+ 
+    <div class="divider">or</div>
+ 
+    <!-- Card form -->
+    <div class="form-grid">
+ 
+      <!-- Card number -->
+      <div class="input-wrap">
+        <input type="text" placeholder="Card number" inputmode="numeric" maxlength="19" />
+        <div class="icons">
+          <span class="card-icon icon-visa">VISA</span>
+          <span class="card-icon icon-mc"><span class="mc"></span></span>
+          <span class="card-icon icon-amex">AMEX</span>
+          <span class="card-icon icon-discover">DISC</span>
+          <span class="lock-icon">🔒</span>
+        </div>
+      </div>
+ 
+      <!-- Expiry / CVV -->
+      <div class="form-row">
+        <div class="input-wrap">
+          <input type="text" placeholder="MM / YY" maxlength="7" />
+        </div>
+        <div class="input-wrap">
+          <input type="text" placeholder="CVV" maxlength="4" />
+          <span class="cvv-info">ⓘ</span>
+        </div>
+      </div>
+ 
+      <!-- Name -->
+      <div class="form-row">
+        <div class="input-wrap"><input type="text" placeholder="First name" /></div>
+        <div class="input-wrap"><input type="text" placeholder="Last name" /></div>
+      </div>
+ 
+      <!-- Address -->
+      <div class="input-wrap">
+        <input type="text" placeholder="Address" />
+      </div>
+ 
+      <!-- Postal / Country -->
+      <div class="form-row">
+        <div class="input-wrap">
+          <input type="text" placeholder="Postal code" />
+        </div>
+        <div class="select-wrap">
+          <span class="select-label">Country/region</span>
+          <select>
+            <option value="AF">Afghanistan</option>
+            <option value="AL">Albania</option>
+            <option value="DZ">Algeria</option>
+            <option value="AR">Argentina</option>
+            <option value="AM">Armenia</option>
+            <option value="AU">Australia</option>
+            <option value="AT">Austria</option>
+            <option value="AZ">Azerbaijan</option>
+            <option value="BY">Belarus</option>
+            <option value="BE">Belgium</option>
+            <option value="BA">Bosnia and Herzegovina</option>
+            <option value="BR">Brazil</option>
+            <option value="BG">Bulgaria</option>
+            <option value="CA">Canada</option>
+            <option value="CL">Chile</option>
+            <option value="CN">China</option>
+            <option value="CO">Colombia</option>
+            <option value="HR">Croatia</option>
+            <option value="CZ">Czech Republic</option>
+            <option value="DK">Denmark</option>
+            <option value="EG">Egypt</option>
+            <option value="EE">Estonia</option>
+            <option value="FI">Finland</option>
+            <option value="FR">France</option>
+            <option value="GE">Georgia</option>
+            <option value="DE">Germany</option>
+            <option value="GR">Greece</option>
+            <option value="HU">Hungary</option>
+            <option value="IN">India</option>
+            <option value="ID">Indonesia</option>
+            <option value="IR">Iran</option>
+            <option value="IQ">Iraq</option>
+            <option value="IE">Ireland</option>
+            <option value="IL">Israel</option>
+            <option value="IT">Italy</option>
+            <option value="JP">Japan</option>
+            <option value="JO">Jordan</option>
+            <option value="KZ">Kazakhstan</option>
+            <option value="KE">Kenya</option>
+            <option value="KR">South Korea</option>
+            <option value="KW">Kuwait</option>
+            <option value="KG">Kyrgyzstan</option>
+            <option value="LV">Latvia</option>
+            <option value="LB">Lebanon</option>
+            <option value="LT">Lithuania</option>
+            <option value="LU">Luxembourg</option>
+            <option value="MK">North Macedonia</option>
+            <option value="MY">Malaysia</option>
+            <option value="MT">Malta</option>
+            <option value="MX">Mexico</option>
+            <option value="MD">Moldova</option>
+            <option value="ME">Montenegro</option>
+            <option value="MA">Morocco</option>
+            <option value="NL">Netherlands</option>
+            <option value="NZ">New Zealand</option>
+            <option value="NG">Nigeria</option>
+            <option value="NO">Norway</option>
+            <option value="PK">Pakistan</option>
+            <option value="PE">Peru</option>
+            <option value="PH">Philippines</option>
+            <option value="PL">Poland</option>
+            <option value="PT">Portugal</option>
+            <option value="QA">Qatar</option>
+            <option value="RO">Romania</option>
+            <option value="RU">Russia</option>
+            <option value="SA">Saudi Arabia</option>
+            <option value="RS">Serbia</option>
+            <option value="SK">Slovakia</option>
+            <option value="SI">Slovenia</option>
+            <option value="ZA">South Africa</option>
+            <option value="ES">Spain</option>
+            <option value="SE">Sweden</option>
+            <option value="CH">Switzerland</option>
+            <option value="SY">Syria</option>
+            <option value="TW">Taiwan</option>
+            <option value="TJ">Tajikistan</option>
+            <option value="TH">Thailand</option>
+            <option value="TN">Tunisia</option>
+            <option value="TR">Turkey</option>
+            <option value="TM">Turkmenistan</option>
+            <option value="UA" selected>Ukraine</option>
+            <option value="AE">United Arab Emirates</option>
+            <option value="GB">United Kingdom</option>
+            <option value="US">United States</option>
+            <option value="UZ">Uzbekistan</option>
+            <option value="VE">Venezuela</option>
+            <option value="VN">Vietnam</option>
+            <option value="YE">Yemen</option>
+          </select>
+          <span class="select-arrow">⇅</span>
+        </div>
+      </div>
+ 
+    </div>
+ 
+    <!-- Subscribe -->
+    <button class="btn-subscribe" onclick="payOperation()">Pay</button>
+ 
+    <p class="fine-print">
+      Renews Sep 16, 2026 on Basic plan, €27/mo + tax.<br>
+      Cancel before 3-day free trial ends to avoid charges.
+    </p>
+ 
+  </div>
+</div>
+
+<script src="/site/JS/script.js"></script> 
+</body>
+</html>
+  
