@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+  <div class="logo">
+    <img src="../../img/logo.png" alt="Logo" id="logo" class="logo">
+  </div>
+  
+  <ul class="nav-links">
+    <li><a href="../../index.html">Shop</a></li>
+    <li><a href="../../pages/main/phones.html">Phones</a></li>
+    <li><a href="../../pages/main/new-arrivals.html">New Arrivals</a></li>
+    <li><a href="../../pages/main/Acessories.html">Accessories</a></li>
+  </ul>
+
+  <div class="search-bar" style="position: relative;">
+    <input type="search" id="searchInput" placeholder="Search for products..." autocomplete="off">
+        <i class="loop-icon" style="position: absolute; left: 0.625rem; font-size: 1.125rem; color: gray; pointer-events: none;"></i>
+       <div id="searchSuggestions" class="search-suggestions"></div>
+  </div>
+
+  <div class="user-actions">
+    <a href="../../pages/main/account.html" class="profile-link"></a>
+    <a href="../../pages/main/cart.html" class="shop-link"></a>
+  </div>
+</header>
+
+<section class="breadcrumbs-section">
+   <a href="../../index.html" class="home-link">Home</a>
+   <span class="right"> > </span>
+   <a href="../../pages/main/shop.html" class="shop-link2">Shop</a>
+   <span class="right"> > </span>
+    <a href="../../pages/laptops/MacBook-Pro-14.html" class="active-breadcrumbs">MacBook Pro 14</a>
+ </section>
+
+<section class="img-product">
+
+  <div class="main-image-wrap" id="mainWrap">
+
+    <img src="../../img/macbook-pro-14-apple-m5-pro15cpu16gpu24gb1tb-silver-2026-mgdn41.webp" alt="Вигляд 1" class="active" id="mainImg">
+  </div>
+</section>
+
+  <section class="info-block">
+    <div class="name-product2">
+      <h3 class="text-label">MacBook Pro 10</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+    <div class="info-block">
+       <h3 class="product-price" id="product-price-mac-pro14">1 529$</h3>
+       <p class="text-p">Supercharged by the next-generation M3 chip, the MacBook Air delivers incredible speed and performance in a strikingly thin, fanless design that operates completely silently. The stunning Liquid Retina display brings your visuals to life with vibrant colors and razor-sharp clarity, while the exceptional battery lasts up to 18 hours so you can leave your charger behind. Wrapped in the iconic, deep Midnight finish, it is the perfect mix of power and mobility for creators, coders, and go-getters on the move.</p>
+    </div>
+    
+  <hr class="after-info">
+
+  <div class="info-block">
+    <p class="rewiaw-text">Select color</p>
+  </div>
+
+  <div class="block-buttons">
+    <button class="black" 
+    data-color="black-pro-16" 
+    data-image="../../img/macbook-pro-16-black.webp"
+    onclick="changeColor(this)"></button>
+
+
+    <button class="Silver" 
+    data-color="Silver-pro-16" 
+    data-image="../../img/macbook-pro-16-apple-m5-max18cpu32gpu36gb2tb-silver-2026-mge741.webp"
+    onclick="changeColor(this)"></button>
+  </div>
+
+  <hr class="after-info">
+
+  
+
+  <div class="info-block-Storage">
+    <p class="rewiaw-text">Select storage capacity</p>
+    <button class="Storage-1" id="storage-256">256</button>
+    <button class="Storage-2" id="storage-512">512</button>
+    <button class="Storage-3" id="storage-1t">1T</button>
+    <button class="Storage-4" id="storage-2t">2T</button>
+  </div>
+
+  <div class="buy">
+    <div class="quantity-control">
+      <button type="button" class="qty-btn qty-decrease">−</button>
+      <span class="qty-value">1</span>
+      <button type="button" class="qty-btn qty-increase">+</button>
+    </div>
+    <button class="Storage-5">Buy</button>
+  </div>
+
+
+  <section class="carousel-1">
+    <div class="card-customer-left">
+      <div class="customer-name">
+       <h3 class="name">Finn Z.</h3>
+     </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+     <p class="rewiaw-text">
+      An absolute masterpiece for coding.
+As a developer, I constantly run multiple Docker containers, compile heavy code, and keep dozens of tabs open. The Apple Silicon Pro chip handles everything without a single stutter. The fans barely ever turn on, and when they do, they are whisper-quiet. The keyboard is crisp, and the build quality is tank-like. Worth every single penny.
+     </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Henry A.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+    <p class="rewiaw-text">
+      The Liquid Retina XDR display is unmatched.
+I bought the 14-inch Pro primarily for mobile photo editing in Lightroom and Photoshop. The 120Hz ProMotion screen is breathtaking—blacks are perfectly deep, and the peak brightness makes editing HDR content a breeze. Also, having a built-in SD card slot and a full-sized HDMI port again means I can finally leave my annoying dongles at home.
+    </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Samuel I.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+    <p class="rewiaw-text">
+      Studio-grade sound in a portable chassis.
+I use this laptop in my studio for heavy music production in Logic Pro. It handles massive projects with hundreds of tracks and plug-ins with zero latency issues. What shocked me the most, though, were the built-in speakers. They sound incredibly full, with actual punchy bass that fills a medium-sized room. The best speakers on any laptop, period.
+    </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Ethan J.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">     
+    </div>
+
+    <p class="rewiaw-text">
+      Heavy and bulky, but the performance jump is real.
+I upgraded from a MacBook Air, and the difference is massive. Everything feels smoother because of the 120Hz screen, and the ports are incredibly useful. However, be prepared for the weight. The Pro 14 is noticeably thicker and heavier in a backpack compared to the Air line. If you don't actually need the raw rendering power, the Air might still be the better option for pure travel.
+    </p>
+  </div>
+
+  
+ </section>
+
+
+ <section class="carousel-2">
+    <div class="card-customer-left">
+
+    <div class="customer-name">
+      <h3 class="name">Elijah W.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">    
+    </div>
+
+    <p class="rewiaw-text">
+      Powerful hardware with almost no games to play.
+I bought this hoping the raw GPU power would let me do some gaming on the side. While the hardware is technically capable of running heavy graphics, the macOS gaming ecosystem is still terrible. Most modern AAA games are completely unavailable, and running them through translation layers is a buggy mess. It is an incredible tool for spreadsheets and video editing, but a terrible choice for entertainment.
+    </p>
+  </div>
+
+    <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Luka T.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">     
+    </div>
+
+    <p class="rewiaw-text">
+    Great machine, but external monitor limitations are frustrating.
+The laptop itself is incredibly fast, and the battery life easily gets me through 12 hours of office work. However, if you buy the base processor option, Apple still limits you on how many external monitors you can natively plug in. For a machine with Pro in the name, having to buy the more expensive chip versions just to connect my multi-monitor desk setup is a frustrating cash grab.
+    </p>
+  </div>
+
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Emma S.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">    
+    </div>
+
+    <p class="rewiaw-text">
+     Incredible hardware, but Apple's upgrade pricing is robbery.
+There is no denying that the performance, the trackpad, and the screen are top-tier. But Apple’s pricing structure is incredibly frustrating. Since everything is soldered to the motherboard, you cannot upgrade the storage or RAM later. If you want to configure it with enough specs to future-proof it for the next 5 years, the price sky-rockets into an absurd territory.
+    </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Andrey Y.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">     
+    </div>
+
+    <p class="rewiaw-text">
+      Terrible reliability and expensive repair costs.
+I took great care of this laptop, but just over a year into owning it, thin lines started appearing across the screen. Out of nowhere, the display backlight failed completely. Since it was just past the standard 1-year warranty, Apple customer service quoted me an astronomical price to replace the entire top assembly. For a premium machine that costs this much, having the screen fail so quickly is completely unacceptable.
+    </p>
+  </div>
+
+ </section>
+
+ <section class="wrapper-email">
+  <h4 class="motivation">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h4>
+  <div class="input">
+    <i class="mail-icon" style="position: absolute; left: 0.625rem; font-size: 1.125rem; color: gray; pointer-events: none;"></i>
+    <input type="email" id="newsletter-email" placeholder="Enter your email">
+    <button type="submit" class="button-subtim" id="newsletter-btn">Subscribe to newsletter</button>
+    <div class="email-status" id="email-status"></div>
+  </div>
+</section>
+
+
+ 
+
+ 
+
+ <footer class="footer-section">
+  <div class="logo-section">
+    <img src="../../img/logo.png" id="logo" alt="logo" class="logo">
+    <p class="p">We have computers and accessories that suit your needs and which you're proud to use. From laptops to desktops.</p>
+   <div class="social"> 
+    <a href="https://github.com/fdghdfydfojtrjerwj" class="git-social"></a>
+    <a href="https://x.com/Apache750200" class="twitter-social"></a>
+    <a href="https://www.instagram.com/bynary_way/" class="instagram-social"></a>
+   </div> 
+  </div>
+
+  <div class="Company-links">
+    <h3 class="company-label">Company</h3>
+    <a href="../../pages/company/About.html" class="About">About</a>
+    <a href="#" class="Features">Features</a>
+    <a href="#" class="Work">Work</a>
+    <a href="#" class="Career">Career</a>
+  </div>
+
+  <div class="Help-links">
+    <h3 class="help-label">Help</h3>
+    <a href="#" class="Customer-Support">Customer Support</a>
+    <a href="../../pages/company/Privacy-Policy.html" class="Privacy-Policy">Privacy Policy</a>
+    <a href="#" class="Delivery-Details">Delivery Details</a>
+    <a href="#" class="Privacy Policy">Terms & Conditions</a>
+  </div>
+
+  <div class="FAQ-links">
+    <h3 class="FAQ-label">FAQ</h3>
+    <a href="../../pages/main/account.html" class="Account">Account</a>
+    <a href="#" class="Manage-Deliveries">Manage Deliveries</a>
+    <a href="#" class="Orders">Orders</a>
+    <a href="#" class="Payments">Payments</a>
+  </div>
+
+  <div class="Resources-links">
+    <h3 class="Resources-links">Resources</h3>
+     <a href="#" class="Free-eBooks">Free eBooks</a>
+    <a href="#" class="Development-Tutorial">Development Tutorial</a>
+    <a href="#" class="blog">How to - Blog</a>
+    <a href="#" class="Youtube-Playlist">Youtube Playlist</a>
+  </div>
+
+  <hr class="line-footer">
+ <div class="title">
+  <p class="hr-title">Shop.co © 2000-2023, All Rights Reserved</p>
+ </div>
+
+  <div class="cards-pay">
+    <img src="../../img/visa.png" class="visa-card">
+    <img src="../../img/master-card.png" class="master-card">
+    <img src="../../img/paypal.png" class="paypal-card">
+    <img src="../../img/i-pay.png" class="ipay-card">
+    <img src="../../img/g-pay.png" class="gpay-card">
+  </div>
+ </footer>
+
+<script src="../../js/script.js"></script>
+</body>

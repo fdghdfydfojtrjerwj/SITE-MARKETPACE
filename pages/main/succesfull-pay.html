@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+  <div class="logo">
+    <img src="../../img/logo.png" alt="Logo" id="logo" class="logo">
+  </div>
+  
+  <ul class="nav-links">
+    <li><a href="../../index.html">Shop</a></li>
+    <li><a href="../../pages/main/phones.html">Phones</a></li>
+    <li><a href="../../pages/main/new-arrivals.html">New Arrivals</a></li>
+    <li><a href="../../pages/main/Acessories.html">Accessories</a></li>
+  </ul>
+
+  <div class="search-bar" style="position: relative;">
+    <input type="search" id="searchInput" placeholder="Search for products..." autocomplete="off">
+        <i class="loop-icon" style="position: absolute; left: 0.625rem; font-size: 1.125rem; color: gray; pointer-events: none;"></i>
+       <div id="searchSuggestions" class="search-suggestions"></div>
+  </div>
+
+  <div class="user-actions">
+    <a href="../../pages/main/account.html" class="profile-link"></a>
+    <a href="../../pages/main/cart.html" class="shop-link"></a>
+  </div>
+</header>
+
+ <section class="breadcrumbs-section">
+   <a href="../../index.html" class="home-link">Go Home</a> 
+ </section>
+
+<section class="succesfull-pay-section">
+ <div class="hero-mark-check">
+     <img src="../../img/check_circle_41dp_000000_FILL0_wght500_GRAD0_opsz40.svg" class="check-mark-img">
+ </div>
+
+ <div class="info-hero">
+    <h1 class="title-info-pay">SUCCESFULL PAY</h1>
+    <p class="subtitle-info-pay">Your payment has been processed successfully. You will receive a confirmation email shortly.</p>
+ </div>
+
+ <dl class="receipt-details">
+  <div class="receipt-row">
+    <dt>Amount</dt>
+    <dd id="total-price-label">$0.00</dd>
+  </div>
+  <div class="receipt-row">
+    <dt>Transaction ID</dt>
+    <dd><span class="badge-2" id="transaction-id">TXN-789123456</span></dd>
+  </div>
+  <div class="receipt-row">
+    <dt>Payment Method</dt>
+    <dd id="method-card-code">**** 4242</dd>
+  </div>
+  <div class="receipt-row">
+    <dt>Date</dt>
+    <dd id="date-pay">Dec 15, 2024</dd>
+  </div>
+  <div class="receipt-row">
+    <dt>Merchant</dt>
+    <dd>BinaryWay Shop</dd>
+  </div>
+</dl>
+
+<a href="../../index.html" class="btn-main-link">Go Home</a> 
+
+<script src="../../js/script.js"></script>
+</body>
+</html>

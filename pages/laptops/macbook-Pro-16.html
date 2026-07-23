@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+  <div class="logo">
+    <img src="../../img/logo.png" alt="Logo" id="logo" class="logo">
+  </div>
+  
+  <ul class="nav-links">
+    <li><a href="../../index.html">Shop</a></li>
+    <li><a href="../../pages/main/phones.html">Phones</a></li>
+    <li><a href="../../pages/main/new-arrivals.html">New Arrivals</a></li>
+    <li><a href="../../pages/main/Acessories.html">Accessories</a></li>
+  </ul>
+
+  <div class="search-bar" style="position: relative;">
+    <input type="search" id="searchInput" placeholder="Search for products..." autocomplete="off">
+        <i class="loop-icon" style="position: absolute; left: 0.625rem; font-size: 1.125rem; color: gray; pointer-events: none;"></i>
+       <div id="searchSuggestions" class="search-suggestions"></div>
+  </div>
+
+  <div class="user-actions">
+    <a href="../../pages/main/account.html" class="profile-link"></a>
+    <a href="../../pages/main/cart.html" class="shop-link"></a>
+  </div>
+</header>
+
+<section class="breadcrumbs-section">
+   <a href="../../index.html" class="home-link">Home</a>
+   <span class="right"> > </span>
+   <a href="../../pages/main/shop.html" class="shop-link2">Shop</a>
+   <span class="right"> > </span>
+    <a href="../../pages/laptops/MacBook-Pro-16.html" class="active-breadcrumbs">MacBook Pro 16</a>
+ </section>
+
+<section class="img-product">
+
+  <div class="main-image-wrap" id="mainWrap">
+
+    <img src="../../img/macbook-pro-16-apple-m5-max18cpu32gpu36gb2tb-silver-2026-mge741.webp" alt="Вигляд 1" class="active" id="mainImg">
+  </div>
+</section>
+
+  <section class="info-block">
+    <div class="name-product2">
+      <h3 class="text-label">MacBook Pro 16</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+    <div class="info-block">
+       <h3 class="product-price" id="product-price-mac-pro16">1 529$</h3>
+       <p class="text-p">Supercharged by the next-generation M3 chip, the MacBook Air delivers incredible speed and performance in a strikingly thin, fanless design that operates completely silently. The stunning Liquid Retina display brings your visuals to life with vibrant colors and razor-sharp clarity, while the exceptional battery lasts up to 18 hours so you can leave your charger behind. Wrapped in the iconic, deep Midnight finish, it is the perfect mix of power and mobility for creators, coders, and go-getters on the move.</p>
+    </div>
+    
+  <hr class="after-info">
+
+  <div class="info-block">
+    <p class="rewiaw-text">Select color</p>
+  </div>
+
+  <div class="block-buttons">
+    <button class="black" 
+    data-color="black-pro-16" 
+    data-image="../../img/macbook-pro-16-black.webp"
+    onclick="changeColor(this)"></button>
+
+
+    <button class="Silver" 
+    data-color="Silver-pro-16" 
+    data-image="../../img/macbook-pro-16-apple-m5-max18cpu32gpu36gb2tb-silver-2026-mge741.webp"
+    onclick="changeColor(this)"></button>
+  </div>
+
+  <hr class="after-info">
+
+  
+
+  <div class="info-block-Storage">
+    <p class="rewiaw-text">Select storage capacity</p>
+    <button class="Storage-1" id="storage-256">256</button>
+    <button class="Storage-2" id="storage-512">512</button>
+    <button class="Storage-3" id="storage-1t">1T</button>
+    <button class="Storage-4" id="storage-2t">2T</button>
+  </div>
+
+  <div class="buy">
+    <div class="quantity-control">
+      <button type="button" class="qty-btn qty-decrease">−</button>
+      <span class="qty-value">1</span>
+      <button type="button" class="qty-btn qty-increase">+</button>
+    </div>
+    <button class="Storage-5">Buy</button>
+  </div>
+
+
+  <section class="carousel-1">
+    <div class="card-customer-left">
+      <div class="customer-name">
+       <h3 class="name">Mark K.</h3>
+     </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+     <p class="rewiaw-text">
+      The ultimate workstation for 8K video rendering.
+This laptop is an absolute beast. I edit heavy 8K ProRes footage for a living, and the Pro 16 doesn’t even sweat. The massive screen gives me plenty of timeline space on the road, and the battery life while rendering is mind-blowing. It completely replaced my desktop PC setup.
+     </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Nazar J.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+    <p class="rewiaw-text">
+       Incredible screen and the best speakers on any laptop.
+I use this machine for massive orchestral arrangements in Logic Pro. It handles hundreds of tracks with zero lag. But the real surprise is the 6-speaker sound system. The bass is so deep and clean that I don't even need to plug in my studio monitors when I'm checking a mix in a hotel room.
+    </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Nazar J.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+    <p class="rewiaw-text">
+      Pricey, but it pays for itself in saved time.
+I hesitated to spend this much money, but the efficiency gains are real. The 16-inch ProMotion display is buttery smooth and gorgeous to look at for 10 hours a day. The cooling system is perfectly designed; the laptop stays completely cool and silent even under heavy creative workloads.
+    </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Nazar J.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">      
+    </div>
+
+    <p class="rewiaw-text">
+       Phenomenal performance, but it's a heavy desktop replacement.
+There is no denying the power, the beautiful screen, and the incredible port selection. Having HDMI and an SD card reader built-in is fantastic. However, keep in mind that this thing is heavy and bulky. If you travel constantly or work out of coffee shops every day, the 14-inch version might be much more practical.
+    </p>
+  </div>
+
+  
+ </section>
+
+
+ <section class="carousel-2">
+    <div class="card-customer-left">
+
+    <div class="customer-name">
+      <h3 class="name">Roman N.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">    
+    </div>
+
+    <p class="rewiaw-text">
+      Great machine, but overkill if you use external monitors.
+The performance is top-tier, and the battery lasts forever. My main issue is that I keep this laptop closed on a stand connected to two external 4K displays 90% of the time. Because of that, I feel like I paid a massive premium for a beautiful 16-inch screen and built-in speakers that I barely ever use.
+    </p>
+  </div>
+
+    <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Tanya W.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">      
+    </div>
+
+    <p class="rewiaw-text">
+     Unmatched hardware, but Apple's configuration taxes are painful.
+The base machine is excellent, but 512GB of storage on a 16-inch Pro model is a joke for professionals. The moment you want to upgrade the internal SSD or RAM to future-proof your purchase, Apple charges astronomical prices. Since everything is soldered down and cannot be upgraded later, you are forced to pay.
+    </p>
+  </div>
+
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Nazar L.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">    
+    </div>
+
+    <p class="rewiaw-text">
+      Amazing hardware entirely ruined by the lack of games.
+The graphics processor inside this thing is technically powerful enough to match high-end gaming laptops, but the actual macOS gaming catalog is completely barren. Most modern games just don't exist for Mac. If you want a machine for serious work and serious gaming side-by-side, this isn't it. and the setup was quick. Five stars!
+    </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Noah M.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">     
+    </div>
+
+    <p class="rewiaw-text">
+      Severe component failure just weeks after the warranty ended.
+I treated this expensive laptop like a baby, but right after the 1-year warranty expired, the charging ports stopped working and the motherboard failed completely. Apple's repair quote was almost the price of a brand-new laptop. For a premium professional machine, this level of unreliability is unacceptable.
+    </p>
+  </div>
+
+ </section>
+
+ <section class="wrapper-email">
+  <h4 class="motivation">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h4>
+  <div class="input">
+    <i class="mail-icon" style="position: absolute; left: 0.625rem; font-size: 1.125rem; color: gray; pointer-events: none;"></i>
+    <input type="email" id="newsletter-email" placeholder="Enter your email">
+    <button type="submit" class="button-subtim" id="newsletter-btn">Subscribe to newsletter</button>
+    <div class="email-status" id="email-status"></div>
+  </div>
+</section>
+
+<footer class="footer-section">
+  <div class="logo-section">
+    <img src="../../img/logo.png" id="logo" alt="logo" class="logo">
+    <p class="p">We have computers and accessories that suit your needs and which you're proud to use. From laptops to desktops.</p>
+   <div class="social"> 
+    <a href="https://github.com/fdghdfydfojtrjerwj" class="git-social"></a>
+    <a href="https://x.com/Apache750200" class="twitter-social"></a>
+    <a href="#" class="instagram-social"></a>
+   </div> 
+  </div>
+
+  <div class="Company-links">
+    <h3 class="company-label">Company</h3>
+    <a href="../../pages/company/About.html" class="About">About</a>
+    <a href="#" class="Features">Features</a>
+    <a href="#" class="Work">Work</a>
+    <a href="#" class="Career">Career</a>
+  </div>
+
+  <div class="Help-links">
+    <h3 class="help-label">Help</h3>
+    <a href="#" class="Customer-Support">Customer Support</a>
+    <a href="../../pages/company/Privacy-Policy.html" class="Privacy-Policy">Privacy Policy</a>
+    <a href="#" class="Delivery-Details">Delivery Details</a>
+    <a href="#" class="Privacy Policy">Terms & Conditions</a>
+  </div>
+
+  <div class="FAQ-links">
+    <h3 class="FAQ-label">FAQ</h3>
+    <a href="../../pages/main/account.html" class="Account">Account</a>
+    <a href="#" class="Manage-Deliveries">Manage Deliveries</a>
+    <a href="#" class="Orders">Orders</a>
+    <a href="#" class="Payments">Payments</a>
+  </div>
+
+  <div class="Resources-links">
+    <h3 class="Resources-links">Resources</h3>
+     <a href="#" class="Free-eBooks">Free eBooks</a>
+    <a href="#" class="Development-Tutorial">Development Tutorial</a>
+    <a href="#" class="blog">How to - Blog</a>
+    <a href="#" class="Youtube-Playlist">Youtube Playlist</a>
+  </div>
+
+  <hr class="line-footer">
+ <div class="title">
+  <p class="hr-title">Shop.co © 2000-2023, All Rights Reserved</p>
+ </div>
+
+  <div class="cards-pay">
+    <img src="../../img/visa.png" class="visa-card">
+    <img src="../../img/master-card.png" class="master-card">
+    <img src="../../img/paypal.png" class="paypal-card">
+    <img src="../../img/i-pay.png" class="ipay-card">
+    <img src="../../img/g-pay.png" class="gpay-card">
+  </div>
+ </footer>
+
+<script src="../../js/script.js"></script>
+</body>

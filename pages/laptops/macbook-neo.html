@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+  <div class="logo">
+    <img src="../../img/logo.png" alt="Logo" id="logo" class="logo">
+  </div>
+  
+  <ul class="nav-links">
+    <li><a href="../../index.html">Shop</a></li>
+    <li><a href="../../pages/main/phones.html">Phones</a></li>
+    <li><a href="../../pages/main/new-arrivals.html">New Arrivals</a></li>
+    <li><a href="../../pages/main/Acessories.html">Accessories</a></li>
+  </ul>
+
+  <div class="search-bar" style="position: relative;">
+    <input type="search" id="searchInput" placeholder="Search for products..." autocomplete="off">
+        <i class="loop-icon" style="position: absolute; left: 0.625rem; font-size: 1.125rem; color: gray; pointer-events: none;"></i>
+       <div id="searchSuggestions" class="search-suggestions"></div>
+  </div>
+
+  <div class="user-actions">
+    <a href="../../pages/main/account.html" class="profile-link"></a>
+    <a href="../../pages/main/cart.html" class="shop-link"></a>
+  </div>
+</header>
+
+<section class="breadcrumbs-section">
+   <a href="../../index.html" class="home-link">Home</a>
+   <span class="right"> > </span>
+   <a href="../../pages/main/cart.html" class="shop-link2">Shop</a>
+   <span class="right"> > </span>
+    <a href="../../pages/laptops/MacBook-Neo.html" class="active-breadcrumbs">MacBook Neo</a>
+ </section>
+
+<section class="img-product">
+
+  <div class="main-image-wrap" id="mainWrap">
+
+    <img src="../../img/macbook-neo-512gb-citrus-mhfe41.webp" alt="Вигляд 1" class="active" id="mainImg">
+  </div>
+</section>
+
+    <section class="info-block">
+    <div class="name-product2">
+      <h3 class="text-label">MacBook Neo</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+    <div class="info-block">
+       <h3 class="product-price" id="product-price-macneo">300$</h3>
+       <p class="text-p">• Design & Mobility: An ultra-thin and lightweight gadget. When closed, it looks almost identical to a classic MacBook. However, you can detach the screen at any moment to use it as a standalone tablet.</p>
+       <p class="text-p">• Display: A stunning, crisp touchscreen (Liquid Retina) that is perfect not just for coding or typing, but also for drawing, browsing, and navigation with your fingers or an Apple Pencil.</p>
+       <p class="text-p">• Performance: Powered by desktop-class Apple Silicon (M-series) chips, this "transformer" matches the speed of traditional Apple laptops. It easily handles web development, design, and heavy multitasking.</p> 
+       <p class="text-p">• Ergonomics: The keyboard features great key travel, backlighting, and a built-in trackpad that perfectly replicates the Mac experience. The unique "floating" magnetic cantilever design allows you to adjust the screen to your perfect viewing angle.</p>
+       <p class="text-p">•  Operating System: Driven by iPadOS, featuring Stage Manager for seamless multi-window multitasking, while maintaining the speed and simplicity of a mobile OS.</p>
+    </div>
+
+    <hr class="after-info">
+
+  <div class="info-block">
+    <p class="rewiaw-text">Select color</p>
+  </div>
+
+  <div class="block-buttons">
+    <button class="yelow" 
+    data-color="citrus-neo" 
+    data-image="../../img/macbook-neo-512gb-citrus-mhfe41.webp"
+    onclick="changeColor(this)"></button>
+
+
+    <button class="pink" 
+    data-color="pink-neo" 
+    data-image="../../img/macbook-neo-pink.webp"
+    onclick="changeColor(this)"></button>
+
+
+    <button class="blue" data-color="blue-neo" 
+    data-image="../../img/macbook-neo-blue.webp"
+    onclick="changeColor(this);"></button>
+
+
+    <button class="grey" 
+    data-color="grey-neo" 
+    data-image="../../img/macbook-neo-silver.webp"
+    onclick="changeColor(this);"></button>
+  </div>
+
+  <hr class="after-info">
+
+  
+
+  <div class="info-block-Storage">
+    <p class="rewiaw-text">Select storage capacity</p>
+    <button class="Storage-1" id="storage-256">256</button>
+    <button class="Storage-2" id="storage-512">512</button>
+  </div>
+
+  <div class="buy">
+    <div class="quantity-control">
+      <button type="button" class="qty-btn qty-decrease">−</button>
+      <span class="qty-value">1</span>
+      <button type="button" class="qty-btn qty-increase">+</button>
+    </div>
+    <button class="Storage-5">Buy</button>
+  </div>
+
+  <section class="carousel-1">
+    <div class="card-customer-left">
+      <div class="customer-name">
+       <h3 class="name">Nazar B.</h3>
+     </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+     <p class="rewiaw-text">
+      The future of ultra-portable computing!
+I paired my iPad Air with the Magic Keyboard, and it has completely replaced my old laptop. This setup is incredibly modular—I can type out an article with the crisp, backlit keys, and then instantly detach the screen to draw or read. The trackpad is small but super precise, and the cellular connectivity means I can work from anywhere.
+     </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">James H.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+    <p class="rewiaw-text">
+      Unmatched versatility for designers.
+For anyone in design or illustration, this "tablet-laptop" hybrid is unmatched. The screen quality is breathtaking with perfect color accuracy. When docked, the floating cantilever design positions the screen at the perfect height for editing. When detached, it becomes a lightweight canvas. It's the best of both worlds. 
+    </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Lucas H.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">     
+    </div>
+
+    <p class="rewiaw-text">
+      Amazing hardware, but software has a slight learning curve.
+The hardware is premium, the keyboard feels fantastic, and the M-series chip inside is incredibly powerful. Stage Manager makes multitasking with multiple windows much easier than before. My only issue is that some desktop-grade web apps and coding environments still require workarounds compared to a traditional Mac or PC.
+    </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Mason E.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">     
+    </div>
+
+    <p class="rewiaw-text">
+      Great on a desk, but awkward to use on your lap.
+While the keyboard itself is excellent and the screen looks amazing, the weight distribution makes it top-heavy. Because all the computer parts are in the screen rather than the base, it tends to tip backward when typing on your lap while sitting on a couch. It's perfect on a stable desk, but less practical on the go.
+    </p>
+  </div>
+
+  
+ </section>
+
+
+ <section class="carousel-2">
+    <div class="card-customer-left">
+
+    <div class="customer-name">
+      <h3 class="name">Sophia D.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">    
+    </div>
+
+    <p class="rewiaw-text">
+      It is still just a tablet with a keyboard attached.
+I really wanted this to be my next laptop, but mobile operating systems are just too limiting for heavy workflows. File management is clunky, and you can't run multiple background processes smoothly like you can on a standard desktop environment. It’s an expensive accessory combo that doesn't fully replicate a real laptop experience.
+    </p>
+  </div>
+
+    <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Ethan Z.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+    <p class="rewiaw-text">
+      The best distraction-free writing tool.
+As an author, this is my favorite device setup. The keyboard layout is excellent, the keys are surprisingly quiet, and the battery lasts forever. Because the interface forces you to focus on one or two apps at a time, it actually keeps me more focused than a chaotic desktop interface. Plus, charging via the pass-through USB-C port on the hinge is brilliant.
+    </p>
+  </div>
+
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Alexander B.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">     
+    </div>
+
+    <p class="rewiaw-text">
+      Phenomenal execution, but the pricing is absurd.
+The performance is snappy, the pass-through charging works great, and the typing experience is top-tier. However, when you add up the price of the device and the premium keyboard dock, it costs more than a standalone MacBook Air. It’s hard to justify the price unless you absolutely need the touchscreen and pencil features.
+    </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Filip J.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+    <p class="rewiaw-text">
+      Too fragile and doesn't support my school software.
+I bought this setup for high school classes, and it was a mistake. The magnetic connection holds well, but the fabric material on the exterior scratches easily and gets dirty quickly. More importantly, several specialized exam-monitoring software programs required by my school simply refuse to run on mobile operating systems. Had to switch to a standard laptop.
+    </p>
+  </div>
+
+ </section>
+
+ <section class="wrapper-email">
+  <h4 class="motivation">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h4>
+  <div class="input">
+    <i class="mail-icon" style="position: absolute; left: 0.625rem; font-size: 1.125rem; color: gray; pointer-events: none;"></i>
+    <input type="email" id="newsletter-email" placeholder="Enter your email">
+    <button type="submit" class="button-subtim" id="newsletter-btn">Subscribe to newsletter</button>
+    <div class="email-status" id="email-status"></div>
+  </div>
+</section>
+
+
+ 
+
+ 
+
+ <footer class="footer-section">
+  <div class="logo-section">
+    <img src="../../img/logo.png" id="logo" alt="logo" class="logo">
+    <p class="p">We have computers and accessories that suit your needs and which you're proud to use. From laptops to desktops.</p>
+   <div class="social"> 
+    <a href="https://github.com/fdghdfydfojtrjerwj" class="git-social"></a>
+    <a href="https://x.com/Apache750200" class="twitter-social"></a>
+    <a href="https://www.instagram.com/bynary_way/" class="instagram-social"></a>
+   </div> 
+  </div>
+
+  <div class="Company-links">
+    <h3 class="company-label">Company</h3>
+    <a href="../../pages/company/About.html" class="About">About</a>
+    <a href="#" class="Features">Features</a>
+    <a href="#" class="Work">Work</a>
+    <a href="#" class="Career">Career</a>
+  </div>
+
+  <div class="Help-links">
+    <h3 class="help-label">Help</h3>
+    <a href="#" class="Customer-Support">Customer Support</a>
+    <a href="../../pages/company/Privacy-Policy.html" class="Privacy-Policy">Privacy Policy</a>
+    <a href="#" class="Delivery-Details">Delivery Details</a>
+    <a href="#" class="Privacy Policy">Terms & Conditions</a>
+  </div>
+
+  <div class="FAQ-links">
+    <h3 class="FAQ-label">FAQ</h3>
+    <a href="../../pages/main/account.html" class="Account">Account</a>
+    <a href="#" class="Manage-Deliveries">Manage Deliveries</a>
+    <a href="#" class="Orders">Orders</a>
+    <a href="#" class="Payments">Payments</a>
+  </div>
+
+  <div class="Resources-links">
+    <h3 class="Resources-links">Resources</h3>
+     <a href="#" class="Free-eBooks">Free eBooks</a>
+    <a href="#" class="Development-Tutorial">Development Tutorial</a>
+    <a href="#" class="blog">How to - Blog</a>
+    <a href="#" class="Youtube-Playlist">Youtube Playlist</a>
+  </div>
+
+  <hr class="line-footer">
+ <div class="title">
+  <p class="hr-title">Shop.co © 2000-2023, All Rights Reserved</p>
+ </div>
+
+  <div class="cards-pay">
+    <img src="../../img/visa.png" class="visa-card">
+    <img src="../../img/master-card.png" class="master-card">
+    <img src="../../img/paypal.png" class="paypal-card">
+    <img src="../../img/i-pay.png" class="ipay-card">
+    <img src="../../img/g-pay.png" class="gpay-card">
+  </div>
+ </footer>
+
+<script src="../../js/script.js"></script>
+</body>

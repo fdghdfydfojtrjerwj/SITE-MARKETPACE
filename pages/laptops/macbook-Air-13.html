@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <header class="navbar">
+  <div class="logo">
+    <img src="../../img/logo.png" alt="Logo" id="logo" class="logo">
+  </div>
+  
+  <ul class="nav-links">
+    <li><a href="../../index.html">Shop</a></li>
+    <li><a href="../../pages/main/phones.html">Phones</a></li>
+    <li><a href="../../pages/main/new-arrivals.html">New Arrivals</a></li>
+    <li><a href="../../pages/main/Acessories.html">Accessories</a></li>
+  </ul>
+
+  <div class="search-bar" style="position: relative;">
+    <input type="search" id="searchInput" placeholder="Search for products..." autocomplete="off">
+        <i class="loop-icon" style="position: absolute; left: 0.625rem; font-size: 1.125rem; color: gray; pointer-events: none;"></i>
+       <div id="searchSuggestions" class="search-suggestions"></div>
+  </div>
+
+  <div class="user-actions">
+    <a href="../../pages/main/account.html" class="profile-link"></a>
+    <a href="../../pages/main/cart.html" class="shop-link"></a>
+  </div>
+</header>
+
+<section class="breadcrumbs-section">
+   <a href="../../index.html" class="home-link">Home</a>
+   <span class="right"> > </span>
+   <a href="../../pages/main/shop.html" class="shop-link2">Shop</a>
+   <span class="right"> > </span>
+    <a href="../../pages/laptops/MacBook-Air-13.html" class="active-breadcrumbs">MacBook Air 13</a>
+ </section>
+
+<section class="img-product">
+
+  <div class="main-image-wrap" id="mainWrap">
+
+    <img src="../../img/macbook-air-13-apple-m510cpu10gpu24gb1tb-ssdstarlight-mdhd41.webp" alt="Вигляд 1" class="active" id="mainImg">
+  </div>
+</section>
+
+  <section class="info-block">
+    <div class="name-product2">
+      <h3 class="text-label">MacBook Air 13</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+    <div class="info-block">
+       <h3 class="product-price" id="product-price-mac-air13">1 529$</h3>
+       <p class="text-p">Supercharged by the next-generation M3 chip, the MacBook Air delivers incredible speed and performance in a strikingly thin, fanless design that operates completely silently. The stunning Liquid Retina display brings your visuals to life with vibrant colors and razor-sharp clarity, while the exceptional battery lasts up to 18 hours so you can leave your charger behind. Wrapped in the iconic, deep Midnight finish, it is the perfect mix of power and mobility for creators, coders, and go-getters on the move.</p>
+    </div>
+    
+  <hr class="after-info">
+
+  <div class="info-block">
+    <p class="rewiaw-text">Select color</p>
+  </div>
+
+  <div class="block-buttons">
+    <button class="blue-button"
+    data-color="blue-air-13" 
+    data-image="../../img/macbook-air-13-blue.webp"
+    onclick="changeColor(this)"></button>
+
+    <button class="brown-gold"
+    data-color="brown-gold-air-13" 
+    data-image="../../img/macbook-air-13-apple-m510cpu10gpu24gb1tb-ssdstarlight-mdhd41.webp"
+    onclick="changeColor(this)"></button>
+
+
+    <button class="Gray" 
+    data-color="Gray-air-13" 
+    data-image="../../img/macbook-air-13-silver.webp"
+    onclick="changeColor(this)"></button>
+
+
+    <button class="Midnight"
+    data-color="dark-air-13" 
+    data-image="../../img/macbook-air-13-midnight.webp"
+    onclick="changeColor(this)"></button>
+  </div>
+
+  <hr class="after-info">
+
+  
+
+  <div class="info-block-Storage">
+    <p class="rewiaw-text">Select storage capacity</p>
+    <button class="Storage-1" id="storage-256">256</button>
+    <button class="Storage-2" id="storage-512">512</button>
+    <button class="Storage-3" id="storage-1t">1T</button>
+    <button class="Storage-4">2T</button>
+  </div>
+
+  <div class="buy">
+    <div class="quantity-control">
+      <button type="button" class="qty-btn qty-decrease">−</button>
+      <span class="qty-value">1</span>
+      <button type="button" class="qty-btn qty-increase">+</button>
+    </div>
+    <button class="Storage-5">Buy</button>
+  </div>
+
+
+  <section class="carousel-1">
+    <div class="card-customer-left">
+      <div class="customer-name">
+       <h3 class="name">Kai K.</h3>
+     </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+     <p class="rewiaw-text">
+     The ultimate portable notebook.
+I take this laptop to university every single day, and it’s a dream. It is incredibly thin, weighs almost nothing, and fits into any small backpack. The best part? The battery life is insane. I can easily go two full days of taking notes, browsing, and streaming without touching the charger.
+     </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Henry B.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+    <p class="rewiaw-text">
+      Flawless integration with my other devices.
+If you already have an iPhone or iPad, the MacBook Air is a no-brainer. Copying text on my phone and pasting it instantly on the Mac feels like magic. AirDrop works perfectly, and the build quality is premium with zero deck flex. It runs completely silent too since there are no fans inside.
+    </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Samuel A.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">    
+    </div>
+
+    <p class="rewiaw-text">
+    Excellent machine, but make sure to upgrade the RAM.
+Performance is super smooth for everyday office tasks, coding, and web browsing with dozens of tabs open. The keyboard is crisp and the trackpad is huge. However, I highly recommend buying the 16GB RAM version. The base 8GB model fills up quickly if you do any light photo or video editing.
+    </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Jasper M.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">     
+    </div>
+
+    <p class="rewiaw-text">
+     Great on the go, but limited for desk setups.
+The laptop itself runs fast and has a beautiful, sharp display. But as someone who likes working with multiple external monitors at my desk, the native support for external screens is frustratingly limited on the Air line. Also, only having two ports on the left side means dongles are mandatory.
+    </p>
+  </div>
+
+  
+ </section>
+
+
+ <section class="carousel-2">
+    <div class="card-customer-left">
+
+    <div class="customer-name">
+      <h3 class="name">Finn J.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">  
+    </div>
+
+    <p class="rewiaw-text">
+      Way too expensive for the storage you get.
+While the processor performance is great, charging extra money for a base model with only 256GB of storage is ridiculous. After installing a few apps and downloading offline documents, the drive is almost full. Plus, Apple completely solders everything, so you cannot upgrade the storage or RAM later.
+    </p>
+  </div>
+
+    <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Daniel E.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+    <p class="rewiaw-text">
+      The best typing and trackpad experience on the market.
+I travel constantly for work and this is my primary tool. The Magic Keyboard is incredibly satisfying to type on for hours, and the trackpad is so precise that I never need to pack an external mouse. It wakes up instantly the moment you lift the lid. Truly worth the premium price tag.
+    </p>
+  </div>
+
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Milo R.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">     
+    </div>
+
+    <p class="rewiaw-text">
+      Amazing speakers and screen, but watch out for the notch.
+Watching movies on this 13-inch screen is a fantastic experience. The colors are vivid, and the sound coming from such a thin chassis is shockingly loud and clear with decent bass. My only tiny complaint is the camera notch at the top of the screen; it takes a few weeks to get used to it blocking the menu bar.
+    </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Max D.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">   
+    </div>
+
+    <p class="rewiaw-text">
+      Do not buy this if you want to play games.
+This computer is optimized for efficiency and work, not gaming. Most popular PC games don't even have a version for Mac, and the ones that do run poorly because the laptop has no cooling fan and throttles when it gets hot. Great for spreadsheets and YouTube, but absolutely terrible for gaming.
+    </p>
+  </div>
+
+ </section>
+
+ <section class="wrapper-email">
+  <h4 class="motivation">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h4>
+  <div class="input">
+    <i class="mail-icon" style="position: absolute; left: 0.625rem; font-size: 1.125rem; color: gray; pointer-events: none;"></i>
+    <input type="email" id="newsletter-email" placeholder="Enter your email">
+    <button type="submit" class="button-subtim" id="newsletter-btn">Subscribe to newsletter</button>
+    <div class="email-status" id="email-status"></div>
+  </div>
+</section>
+
+
+ 
+
+ 
+
+ <footer class="footer-section">
+  <div class="logo-section">
+    <img src="../../img/logo.png" id="logo" alt="logo" class="logo">
+    <p class="p">We have computers and accessories that suit your needs and which you're proud to use. From laptops to desktops.</p>
+   <div class="social"> 
+    <a href="https://github.com/fdghdfydfojtrjerwj" class="git-social"></a>
+    <a href="https://x.com/Apache750200" class="twitter-social"></a>
+    <a href="https://www.instagram.com/bynary_way/" class="instagram-social"></a>
+   </div> 
+  </div>
+
+  <div class="Company-links">
+    <h3 class="company-label">Company</h3>
+    <a href="../../pages/company/About.html" class="About">About</a>
+    <a href="#" class="Features">Features</a>
+    <a href="#" class="Work">Work</a>
+    <a href="#" class="Career">Career</a>
+  </div>
+
+  <div class="Help-links">
+    <h3 class="help-label">Help</h3>
+    <a href="#" class="Customer-Support">Customer Support</a>
+    <a href="../../pages/company/Privacy-Policy.html" class="Privacy-Policy">Privacy Policy</a>
+    <a href="#" class="Delivery-Details">Delivery Details</a>
+    <a href="#" class="Privacy Policy">Terms & Conditions</a>
+  </div>
+
+  <div class="FAQ-links">
+    <h3 class="FAQ-label">FAQ</h3>
+    <a href="../../pages/main/account.html" class="Account">Account</a>
+    <a href="#" class="Manage-Deliveries">Manage Deliveries</a>
+    <a href="#" class="Orders">Orders</a>
+    <a href="#" class="Payments">Payments</a>
+  </div>
+
+  <div class="Resources-links">
+    <h3 class="Resources-links">Resources</h3>
+     <a href="#" class="Free-eBooks">Free eBooks</a>
+    <a href="#" class="Development-Tutorial">Development Tutorial</a>
+    <a href="#" class="blog">How to - Blog</a>
+    <a href="#" class="Youtube-Playlist">Youtube Playlist</a>
+  </div>
+
+  <hr class="line-footer">
+ <div class="title">
+  <p class="hr-title">Shop.co © 2000-2023, All Rights Reserved</p>
+ </div>
+
+  <div class="cards-pay">
+    <img src="../../img/visa.png" class="visa-card">
+    <img src="../../img/master-card.png" class="master-card">
+    <img src="../../img/paypal.png" class="paypal-card">
+    <img src="../../img/i-pay.png" class="ipay-card">
+    <img src="../../img/g-pay.png" class="gpay-card">
+  </div>
+ </footer>
+
+<script src="../../js/script.js"></script>
+</body>

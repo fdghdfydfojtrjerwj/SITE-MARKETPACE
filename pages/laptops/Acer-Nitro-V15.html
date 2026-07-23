@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header class="navbar">
+  <div class="logo">
+    <img src="../../img/logo.png" alt="Logo" id="logo" class="logo">
+  </div>
+  
+  <ul class="nav-links">
+    <li><a href="../../index.html">Shop</a></li>
+    <li><a href="../../pages/main/phones.html">Phones</a></li>
+    <li><a href="../../pages/main/new-arrivals.html">New Arrivals</a></li>
+    <li><a href="../../pages/main/Acessories.html">Accessories</a></li>
+  </ul>
+
+  <div class="search-bar" style="position: relative;">
+    <input type="search" id="searchInput" placeholder="Search for products..." autocomplete="off">
+        <i class="loop-icon" style="position: absolute; left: 0.625rem; font-size: 1.125rem; color: gray; pointer-events: none;"></i>
+       <div id="searchSuggestions" class="search-suggestions"></div>
+  </div>
+
+  <div class="user-actions">
+    <a href="../../pages/main/account.html" class="profile-link"></a>
+    <a href="../../pages/main/cart.html" class="shop-link"></a>
+  </div>
+</header>
+
+<section class="breadcrumbs-section">
+   <a href="../../index.html" class="home-link">Home</a>
+   <span class="right"> > </span>
+   <a href="../../pages/main/shop.html" class="shop-link2">Shop</a>
+   <span class="right"> > </span>
+    <a href="../../pages/laptops/Acer-Nitro-V15.html" class="active-breadcrumbs">Acer Nitro V15</a>
+ </section>
+
+<section class="img-product">
+
+  <div class="main-image-wrap" id="mainWrap">
+
+    <img src="../../img/noutbuk-acer-nitro-v-15-anv15-52-156-fhd-ips-intel-i5-13420h-16gb-f512gb-nvd5060-8-lin-cornii1.webp" alt="Вигляд 1" class="active" id="mainImg">
+  </div>
+</section>
+
+  <section class="info-block">
+    <div class="name-product2">
+      <h3 class="text-label">HP Laptop 15</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+    <div class="info-block">
+       <h3 class="product-price" id="product-price-acer-nitro-v15">400$</h3>
+       <p class="text-p">Acer Nitro V15: Next-level gaming, sleek design.</p>
+<p class="text-p">• Powerful NVIDIA GeForce RTX graphics for an immersive 3D gaming experience.</p>
+<p class="text-p">• Smart cooling system that tunes performance automatically to your workload.</p>
+<p class="text-p">• High-refresh-rate display: Up to 144Hz of smooth visuals (with ultra-fast response time).</p>
+<p class="text-p">• Tough & tactical build — ready for intense gaming sessions and heavy multitasking.</p>
+<p class="text-p">Upgrade your gaming game today!</p>
+    </div>
+    
+  <hr class="after-info">
+
+  <div class="info-block">
+    <p class="rewiaw-text">Select color</p>
+  </div>
+
+  <div class="block-buttons">
+   <button class="black" 
+    data-color="black-nitro-v15" 
+    data-image="../../img/noutbuk-acer-nitro-v-15-anv15-52-156-fhd-ips-intel-i5-13420h-16gb-f512gb-nvd5060-8-lin-cornii1.webp"
+    onclick="changeColor(this)"></button>
+
+
+   <button class="white-2" 
+    data-color="white-nitro-v15" 
+    data-image="../../img/acer-nitro-v-15-white.webp"
+    onclick="changeColor(this)"></button>
+  </div>
+
+  <hr class="after-info">
+
+  
+
+  <div class="info-block-Storage">
+    <p class="rewiaw-text">Select storage capacity</p>
+    <button class="Storage-1">256</button>
+    <button class="Storage-2" id="storage-512">512</button>
+    <button class="Storage-3" id="storage-1t">1T</button>
+  </div>
+
+  <div class="buy">
+    <div class="quantity-control">
+      <button type="button" class="qty-btn qty-decrease">−</button>
+      <span class="qty-value">1</span>
+      <button type="button" class="qty-btn qty-increase">+</button>
+    </div>
+    <button class="Storage-5">Buy</button>
+  </div>
+
+  <section class="carousel-1">
+    <div class="card-customer-left">
+      <div class="customer-name">
+       <h3 class="name">Marta D.</h3>
+     </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+     <p class="rewiaw-text">
+     Perfect laptop for daily family use!
+I bought this HP 15 for general home use—pay bills, watch YouTube, and check emails. It boots up instantly and the setup was a breeze. The silver finish looks very clean and modern. For everyday tasks, it’s absolutely perfect and very reliable.
+     </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Alex I.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+    <p class="rewiaw-text">
+      Great for studying, but the battery is just okay.
+This laptop is very lightweight, which makes it easy to carry around campus all day. The keyboard is spacious and has a full number pad, which is awesome for my statistics classes. My only complaint is the battery life; it lasts about 5 hours, so I always bring my charger to lectures.
+    </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Luka R.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">    
+    </div>
+
+    <p class="rewiaw-text">
+      Decent speed, but the build feels a bit flimsy.
+The performance is totally fine for the price—it handles web browsing and office apps without lagging. However, the entire body is made of plastic and feels a bit cheap. The screen hinges also feel a little loose. It’s a good budget machine, just don't expect premium materials.
+    </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Olivia Z.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+    <p class="rewiaw-text">
+      Excellent value for a work-from-home setup.
+I needed an affordable laptop for my remote customer service job, and this HP 15 delivers. The built-in webcam and microphone are clear, and the performance doesn't choke when I have 15+ Chrome tabs open alongside Zoom. Highly recommend it for office work.
+    </p>
+  </div>
+
+  
+ </section>
+
+
+ <section class="carousel-2">
+    <div class="card-customer-left">
+
+    <div class="customer-name">
+      <h3 class="name">Mark A.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">    
+    </div>
+
+    <p class="rewiaw-text">
+      Screen is terrible and the fan is constantly loud.
+I am very disappointed with this purchase. The display has terrible viewing angles—if you tilt the screen even slightly, the colors wash out completely. On top of that, the cooling fan runs at maximum speed and makes a loud buzzing noise even when I'm just reading a text document. Returned it.
+    </p>
+  </div>
+
+    <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Ana F.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">     
+    </div>
+
+    <p class="rewiaw-text">
+      A solid workhorse with a great keyboard.
+As someone who works with Excel spreadsheets all day, having a full-sized keyboard with a numeric pad on a 15-inch laptop is a huge plus. The laptop runs cool and quiet. The trackpad is a bit small and off-center, which took some time to get used to, but overall it’s a great tool for work.
+    </p>
+  </div>
+
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Liam A.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">     
+    </div>
+
+    <p class="rewiaw-text">
+      Good performance, but the speakers are awful.
+While the laptop is fast enough for Netflix and casual use, the audio quality is terrible. The speakers are located on the bottom and sound very muffled and tinny. You definitely need to use headphones or external speakers if you want to watch movies or listen to music.
+    </p>
+  </div>
+
+  <div class="card-customer">
+
+    <div class="customer-name">
+      <h3 class="name">Maria X.</h3>
+    </div>
+
+    <div class="stars-carousel">
+      <img src="../../img/stars-1.avif" class="star-1">
+      <img src="../../img/stars-1.avif" class="star-2">
+      <img src="../../img/stars-1.avif" class="star-3">
+      <img src="../../img/stars-1.avif" class="star-4">
+      <img src="../../img/stars-1.avif" class="star-5">      
+    </div>
+
+    <p class="rewiaw-text">
+      Amazing hardware ruined by thermal throttling.
+There is a lot to love, but the cooling system just can't keep up with the i9 processor and dedicated GPU. If you push this laptop to its limits, it throttles hard to prevent overheating. Also, I really miss having a native HDMI port and USB-A slot without relying on dongles. Incredible screen, but flawed execution for hardcore power users.
+  </div>
+
+ </section>
+
+ <section class="wrapper-email">
+  <h4 class="motivation">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h4>
+  <div class="input">
+    <i class="mail-icon" style="position: absolute; left: 0.625rem; font-size: 1.125rem; color: gray; pointer-events: none;"></i>
+    <input type="email" id="newsletter-email" placeholder="Enter your email">
+    <button type="submit" class="button-subtim" id="newsletter-btn">Subscribe to newsletter</button>
+    <div class="email-status" id="email-status"></div>
+  </div>
+</section>
+
+ <footer class="footer-section">
+  <div class="logo-section">
+    <img src="../../img/logo.png" id="logo" alt="logo" class="logo">
+    <p class="p">We have computers and accessories that suit your needs and which you're proud to use. From laptops to desktops.</p>
+   <a href="https://github.com/fdghdfydfojtrjerwj" class="git-social"></a> 
+    <a href="https://x.com/Apache750200" class="twitter-social"></a>
+    <a href="https://www.instagram.com/bynary_way/" class="instagram-social"></a>
+   </div> 
+  </div>
+
+  <div class="Company-links">
+    <h3 class="company-label">Company</h3>
+    <a href="../../pages/company/About.html" class="About">About</a>
+    <a href="#" class="Features">Features</a>
+    <a href="#" class="Work">Work</a>
+    <a href="#" class="Career">Career</a>
+  </div>
+
+  <div class="Help-links">
+    <h3 class="help-label">Help</h3>
+    <a href="#" class="Customer-Support">Customer Support</a>
+    <a href="../../pages/company/Privacy-Policy.html" class="Privacy-Policy">Privacy Policy</a>
+    <a href="#" class="Delivery-Details">Delivery Details</a>
+    <a href="#" class="Privacy Policy">Terms & Conditions</a>
+  </div>
+
+  <div class="FAQ-links">
+    <h3 class="FAQ-label">FAQ</h3>
+    <a href="../../pages/main/account.html" class="Account">Account</a>
+    <a href="#" class="Manage-Deliveries">Manage Deliveries</a>
+    <a href="#" class="Orders">Orders</a>
+    <a href="#" class="Payments">Payments</a>
+  </div>
+
+  <div class="Resources-links">
+    <h3 class="Resources-links">Resources</h3>
+     <a href="#" class="Free-eBooks">Free eBooks</a>
+    <a href="#" class="Development-Tutorial">Development Tutorial</a>
+    <a href="#" class="blog">How to - Blog</a>
+    <a href="#" class="Youtube-Playlist">Youtube Playlist</a>
+  </div>
+
+  <hr class="line-footer">
+ <div class="title">
+  <p class="hr-title">Shop.co © 2000-2023, All Rights Reserved</p>
+ </div>
+
+  <div class="cards-pay">
+    <img src="../../img/visa.png" class="visa-card">
+    <img src="../../img/master-card.png" class="master-card">
+    <img src="../../img/paypal.png" class="paypal-card">
+    <img src="../../img/i-pay.png" class="ipay-card">
+    <img src="../../img/g-pay.png" class="gpay-card">
+  </div>
+ </footer>
+<script src="../../js/script.js"></script>
+</body>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+
+<body>
+  <header class="navbar">
+  <div class="logo">
+    <img src="../../img/logo.png" alt="Logo" id="logo" class="logo">
+  </div>
+  
+  <ul class="nav-links">
+    <li><a href="../../index.html">Shop</a></li>
+    <li><a href="../../pages/main/phones.html">Phones</a></li>
+    <li><a href="../../pages/main/new-arrivals.html">New Arrivals</a></li>
+    <li><a href="../../pages/main/Acessories.html">Accessories</a></li>
+  </ul>
+
+  <div class="search-bar" style="position: relative;">
+    <input type="text" placeholder="Search for products..." title="search-input">
+  </div>
+
+  <div class="user-actions">
+    <a href="../../pages/main/account.html" class="profile-link"></a>
+    <a href="../../pages/main/cart.html" class="shop-link"></a>
+  </div>
+</header>
+
+<section class="date-block" id="date-block">
+   <h1 class="log-in-title">SING IN OR SING UP</h1>
+
+    <div class="input-bars">
+     <input type="text" placeholder="First Name" class="Name-input-button" id="Name-input-button" title="input-sing-up">
+     <input type="email" placeholder="Your Email" class="Email-input-button" id="Email-input-button" title="input-sing-up">
+     <input type="password" placeholder="Your Password" class="Password-input-button" id="Password-input-button" title="input-sing-up">
+    </div>
+
+    <div class="service-buttons">
+      <button class="google-way-button" onclick="loginWithGoogle()">
+          <i class="fa-brands fa-google"></i>
+  Next with Google
+   </button>
+
+      <button class="icloud-way-button" onclick="OpenIcloud()">
+        Sing up
+      </button>
+    </div>
+</section>
+
+ 
+ <script src="../../js/script.js"></script>
+</body>
+</html>
