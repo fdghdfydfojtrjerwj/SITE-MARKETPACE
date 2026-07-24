@@ -7,7 +7,7 @@
  
 #### An online gadget store (smartphones, accessories, new arrivals) featuring a realistic checkout/payment simulation.
 
-<img src="https://github.com/fdghdfydfojtrjerwj/SITE-MARKETPACE/blob/main/Screenshot%202026-06-21%20at%2018.56.07.png"></img>
+<img src="https://github.com/fdghdfydfojtrjerwj/SITE-MARKETPACE/blob/main/imgWeb.png"></img>
 
 ## ✨ Features
 
